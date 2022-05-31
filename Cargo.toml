@@ -1,0 +1,18 @@
+[package]
+name = "quantum_atom"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev.package.'*']
+opt-level = 3
+
+[dependencies]
+#getrandom = { version="0.2.6", features=["js"] }
+#rand = "0.8.5"
+macroquad = "0.3.16"
+egui = "0.18.1"
+egui-macroquad = "0.11.0"
+scilib = "0.4.4"
+num-complex = "0.4.1"
