@@ -249,7 +249,7 @@ async fn main() {
                         ui.label("Orbital");
                         ui.horizontal(|ui| {
                             // FIXME: Figure out why keyboard input doesn't work
-                            ui.add(egui::Slider::new(&mut num_particles, 1..=5_000).integer().show_value(true));
+                            ui.add(egui::Slider::new(&mut num_particles, 1..=5_000).integer().show_value(true).text("x"));
                             if ui.button("Measure").clicked() {
                                 spawn_electrons(&wf, num_particles, &mut electrons, &mut max_prob, &mut max_rad);
                             }
